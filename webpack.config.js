@@ -75,6 +75,6 @@ module.exports = (webpackEnv = 'development') => {
             ],
         },
         plugins: [new HtmlWebpackPlugin({ template: appHtml })],
-        devServer: { port: 3000 },
+        devServer: { port: 3000},
     };
 };
