@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Banner from '../Banner';
+import Why from '../Why';
 
 const Container = styled.div`
     width: 100%;
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
     return (
         <Container>
             <Banner />
+            <Why />
         </Container>
     );
 };

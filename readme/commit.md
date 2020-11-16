@@ -26,4 +26,8 @@
     -   Header Component 만들었습니다.
 
 -   9th - Add Banner & text
+
     -   banner를 임시로 만들어 두었습니다.
+
+-   10th - Add Card for Horizontal flipping
+    -   card 를 만들어 flipping 해서 내용을 보여주려고 합니다.
