@@ -10,7 +10,7 @@ const appIndex = path.resolve(__dirname, 'src', 'index.tsx');
 const appBuild = path.resolve(__dirname, '/build');
 
 module.exports = (webpackEnv = 'development') => {
-    const isEnvDevelopment = webpackEnv === "development";
+    const isEnvDevelopment = webpackEnv === 'development';
     return {
         mode: webpackEnv,
         entry: appIndex,
@@ -58,7 +58,7 @@ module.exports = (webpackEnv = 'development') => {
                         /\.(png|jpe?g|gif)$/i,
                     ],
                     options: {
-                        outputPath: 'static/media',
+                        outputPath: 'images/',
                         name: '[name].[hash:8].[ext]',
                         esModule: false,
                     },
@@ -75,6 +75,6 @@ module.exports = (webpackEnv = 'development') => {
             ],
         },
         plugins: [new HtmlWebpackPlugin({ template: appHtml })],
-        devServer: { port: 3000},
+        devServer: { port: 3000 },
     };
 };
