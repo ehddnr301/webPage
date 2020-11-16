@@ -21,5 +21,9 @@
     -   typescript + react 가 작동하도록 eslint 를 수정하였습니다.
 
 -   8th - Edit webpack.config & Add Header
+
     -   webpack config output path 를 images/ 로 수정해 주었습니다.
     -   Header Component 만들었습니다.
+
+-   9th - Add Banner & text
+    -   banner를 임시로 만들어 두었습니다.

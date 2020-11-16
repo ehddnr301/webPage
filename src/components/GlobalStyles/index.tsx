@@ -13,7 +13,7 @@ const globalStyles = createGlobalStyle`
         width: 100%;
         height: 100%;
         background: #ffffff;
-        transition: all 0.25s linear;
+        transition: all 0.25s ease-in-out;
     }
     body {
       background: #ffffff;
@@ -23,7 +23,7 @@ const globalStyles = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      transition: all 0.25s linear;
+      transition: all 0.25s ease-in-out;
     }
     #root {
         width: 100%;

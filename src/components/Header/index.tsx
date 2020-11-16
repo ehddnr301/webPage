@@ -11,6 +11,8 @@ const Container = styled.div`
     padding: 10px 10%; // * 양옆 10% 는 공통적으로 적용 but 중간에 line 때문에 전체 container에 적용하지 않음.
     align-items: center;
     position: fixed;
+    top: 0;
+    z-index: 99;
     background-color: white;
 `;
 
