@@ -12,6 +12,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.2vw;
 `;
 
 const Info = styled.div`

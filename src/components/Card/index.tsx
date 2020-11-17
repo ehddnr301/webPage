@@ -53,7 +53,7 @@ const FrontA = styled.div<BackgroundProp>`
     align-items: center;
     justify-content: center;
     padding-bottom: 30%;
-    font-size: 36px;
+    font-size: 3vw;
     /* border: 1px solid black; */
     & > span {
         z-index: 110;
@@ -71,7 +71,7 @@ const BackA = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-weight: 300;
     line-height: 1.5;
 `;

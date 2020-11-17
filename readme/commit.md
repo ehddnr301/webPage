@@ -46,4 +46,8 @@
     -   why component의 title 양쪽에 선을 만들었습니다.
 
 -   14th - Add Footer
+
     -   Footer 추가하였습니다.
+
+-   15rh - Add mediaquery for small screen
+    -   home 화면만 small screen 에 대응할 예정입니다.
