@@ -13,7 +13,25 @@ const Title = styled.div`
     width: 100%;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
+    font-size: 48px;
+    color: #00094f;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    &::before,
+    &::after {
+        content: '';
+        flex: 1 1;
+        border-bottom: 2px solid #00094f;
+        margin: auto;
+    }
+    &:before {
+        margin-right: 10px;
+    }
+    &:after {
+        margin-left: 10px;
+    }
 `;
 
 const CardWrapper = styled.div`

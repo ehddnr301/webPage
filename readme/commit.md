@@ -38,4 +38,8 @@
     -   card에도 blackbox가 사용되어서 원래 banner에만 있던 blackbox gradient 효과를 분리하여서 component로 만들었습니다.
 
 -   12th - Decorate Card component with image & text
+
     -   card 에 image와 blackbox와 text를 추가했습니다.
+
+-   13th - Add decorate line to title
+    -   why component의 title 양쪽에 선을 만들었습니다.
