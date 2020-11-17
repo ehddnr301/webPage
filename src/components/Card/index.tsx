@@ -1,14 +1,24 @@
 // TODO : children props로 내용, 색 설정 하기.
 import * as React from 'react';
 import styled from 'styled-components';
+import BlackBox from '../BlackBox';
+import hopeless from '../../assets/images/hopeless.jpg';
+import money from '../../assets/images/money.jpg';
+import colabo from '../../assets/images/colabo.jpg';
 
 const CardA = styled.div`
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-color: transparent;
     perspective: 1000px;
     &:hover > div {
         transform: rotateY(180deg);
+    }
+    &:hover > div > div > span {
+        display: none;
+    }
+    &:hover > div > div > div {
+        display: none;
     }
 `;
 const InnerA = styled.div`
@@ -18,16 +28,36 @@ const InnerA = styled.div`
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.97);
 `;
 
-const FrontA = styled.div`
+interface BackgroundProp {
+    count: number;
+}
+const FrontA = styled.div<BackgroundProp>`
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    background-color: #bbb;
-    color: black;
+    background: ${(props) =>
+            props.count === 1
+                ? `url(${money})`
+                : props.count === 2
+                ? `url(${hopeless})`
+                : `url(${colabo})`}
+        center center no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30%;
+    font-size: 36px;
+    /* border: 1px solid black; */
+    & > span {
+        z-index: 110;
+    }
 `;
 const BackA = styled.div`
     position: absolute;
@@ -35,17 +65,34 @@ const BackA = styled.div`
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
-    background-color: dodgerblue;
+    background-color: #343a40;
     color: white;
     transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
 `;
 
-const Card: React.FC = () => {
+interface IProps {
+    color: string;
+    title: string;
+    count: number;
+}
+
+const Card: React.FC<IProps> = ({ color, title, children, count }) => {
     return (
         <CardA>
             <InnerA>
-                <FrontA></FrontA>
-                <BackA></BackA>
+                <FrontA color={color} count={count}>
+                    <span>{title}</span>
+                    <BlackBox opacity={0.5} />
+                </FrontA>
+                <BackA>
+                    <p>{children}</p>
+                </BackA>
             </InnerA>
         </CardA>
     );

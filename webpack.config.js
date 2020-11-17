@@ -68,7 +68,7 @@ module.exports = (webpackEnv = 'development') => {
                     loader: 'url-loader',
                     options: {
                         limit: 10000,
-                        outputPath: 'static/media',
+                        outputPath: 'images/',
                         name: '[name].[hash:8].[ext]',
                     },
                 },
