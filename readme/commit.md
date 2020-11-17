@@ -42,4 +42,8 @@
     -   card 에 image와 blackbox와 text를 추가했습니다.
 
 -   13th - Add decorate line to title
+
     -   why component의 title 양쪽에 선을 만들었습니다.
+
+-   14th - Add Footer
+    -   Footer 추가하였습니다.
