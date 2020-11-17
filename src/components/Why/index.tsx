@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import styled from 'styled-components';
+import device from '../../responsive';
 import Card from '../Card';
 
 const Container = styled.div`
@@ -39,6 +40,15 @@ const CardWrapper = styled.div`
     & > div:not(:last-child) {
         margin-right: 30px;
     }
+    flex-direction: row;
+    @media ${device.small} {
+        flex-direction: column;
+        align-items: center;
+        & > div:not(:last-child) {
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+    }
 `;
 
 const Why: React.FC = () => {
@@ -56,6 +66,7 @@ const Why: React.FC = () => {
                                 AI, 인공지능, 딥러닝, 머신러닝 사실 저 또한 1년
                                 전에는 이런 단어를 보면 제가 할 수 있겠다고는
                                 생각도 못했습니다. 그러나
+                                컴퓨터 전공자도 아닌
                                 제가 도전해 본 결과 할 수 있다는 걸
                                 깨달았습니다. 물론 혼자하기엔 굉장히 힘들고
                                 어려운 길입니다. 그래서 여러분께서 이를 배우실

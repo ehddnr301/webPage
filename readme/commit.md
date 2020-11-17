@@ -50,4 +50,8 @@
     -   Footer 추가하였습니다.
 
 -   15rh - Add mediaquery for small screen
+
     -   home 화면만 small screen 에 대응할 예정입니다.
+
+-   16th - Add Term component & extra mediaquery
+    -   Term component를 추가하였고 모바일부분이 자연스럽게 보이게 mediaquery를 일부 추가하였습니다.

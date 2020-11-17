@@ -8,7 +8,7 @@ const Container = styled.div`
     background: url(${banner}) center center no-repeat;
     background-size: cover;
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -42,15 +42,16 @@ const Text = styled.div`
         margin-bottom: 30px;
     }
     &:first-child {
+        font-weight: 600;
         margin-bottom: 100px;
-        font-size: 2.8vw;
+        font-size: 3.6vw;
         @media ${device.small} {
-            font-size: 24px;
+            font-size: 30px;
         }
         &:hover {
-            font-size: 3vw;
+            font-size: 3.8vw;
             @media ${device.small} {
-                font-size: 26px;
+                font-size: 32px;
             }
         }
     }

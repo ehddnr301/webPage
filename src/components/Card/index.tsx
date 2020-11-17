@@ -5,6 +5,7 @@ import BlackBox from '../BlackBox';
 import hopeless from '../../assets/images/hopeless.jpg';
 import money from '../../assets/images/money.jpg';
 import colabo from '../../assets/images/colabo.jpg';
+import device from '../../responsive';
 
 const CardA = styled.div`
     width: 100%;
@@ -19,6 +20,10 @@ const CardA = styled.div`
     }
     &:hover > div > div > div {
         display: none;
+    }
+    @media ${device.small} {
+        width: 200px;
+        height: 200px;
     }
 `;
 const InnerA = styled.div`
@@ -54,7 +59,9 @@ const FrontA = styled.div<BackgroundProp>`
     justify-content: center;
     padding-bottom: 30%;
     font-size: 3vw;
-    /* border: 1px solid black; */
+    @media ${device.small} {
+        font-size: 5vw;
+    }
     & > span {
         z-index: 110;
     }
