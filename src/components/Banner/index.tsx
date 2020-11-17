@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import banner from '../../assets/images/banner.jpg';
+import BlackBox from '../BlackBox';
 
 const Container = styled.div`
     background: url(${banner}) center center no-repeat;
@@ -11,20 +12,6 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
-
-const BlackBox = styled.div`
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 1) 50%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    opacity: 0.7;
 `;
 
 const TextBox = styled.div`
@@ -59,7 +46,7 @@ const Text = styled.div`
 const Banner: React.FC = () => {
     return (
         <Container>
-            <BlackBox />
+            <BlackBox opacity={0.7} />
             <TextBox>
                 <Text>미래연구소 15기(서울, 수원)</Text>
                 <Text> 딥러닝 입문(서울-점심반) 신청하기 </Text>

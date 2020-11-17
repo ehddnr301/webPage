@@ -30,4 +30,8 @@
     -   banner를 임시로 만들어 두었습니다.
 
 -   10th - Add Card for Horizontal flipping
+
     -   card 를 만들어 flipping 해서 내용을 보여주려고 합니다.
+
+-   11th - Add a Common black box
+    -   card에도 blackbox가 사용되어서 원래 banner에만 있던 blackbox gradient 효과를 분리하여서 component로 만들었습니다.
