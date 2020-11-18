@@ -9,6 +9,7 @@ const globalStyles = createGlobalStyle`
         box-sizing: border-box;
         border-radius: 0;
     }
+    a { color: inherit; text-decoration: none;} 
     html {
         width: 100%;
         height: 100%;

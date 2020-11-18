@@ -55,3 +55,5 @@
 
 -   16th - Add Term component & extra mediaquery
     -   Term component를 추가하였고 모바일부분이 자연스럽게 보이게 mediaquery를 일부 추가하였습니다.
+-   17th - Adjust numeric value & Add Program page
+    -   program소개 페이지 부분중 deep learning 에 해당하는 부분을 추가하였습니다.

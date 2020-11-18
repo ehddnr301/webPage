@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { HashRouter, Redirect, Switch, Route } from 'react-router-dom';
-import Detail from '../Detail';
 import Header from '../Header';
 import Home from '../Home';
+import Program from '../Program';
 
 const PageRoutes: React.FC = () => {
     return (
@@ -10,7 +10,7 @@ const PageRoutes: React.FC = () => {
             <Header />
             <Switch>
                 <Route path="/" exact component={Home} />
-                <Route path="/:id" component={Detail} />
+                <Route path="/program" component={Program} />
                 <Redirect from="*" to="/" />
             </Switch>
         </HashRouter>

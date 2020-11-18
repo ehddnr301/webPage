@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import futurelabLogo from '../../assets/images/lab_logo.jpg';
-import cursor from '../../assets/images/cursor.png';
 import device from '../../responsive';
 
 const Container = styled.div`
@@ -13,7 +13,7 @@ const Container = styled.div`
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 9999999;
     background-color: white;
 `;
 
@@ -51,10 +51,14 @@ const Tab = styled.div`
 const Header: React.FC = () => {
     return (
         <Container>
-            <Logo src={futurelabLogo}></Logo>
+            <Link to="/">
+                <Logo src={futurelabLogo}></Logo>
+            </Link>
             <Tabs>
                 <Tab>스터디 신청하기</Tab>
-                <Tab>program</Tab>
+                <Tab>
+                    <Link to="/program">program</Link>
+                </Tab>
                 <Tab>awards</Tab>
                 <Tab>project</Tab>
                 <Tab>수강후기</Tab>

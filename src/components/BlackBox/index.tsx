@@ -12,7 +12,7 @@ const Container = styled.div<OpacityProp>`
     background: rgb(0, 0, 0);
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 1) 50%,
+        rgba(0, 0, 0, 1) 100%,
         rgba(255, 255, 255, 1) 100%
     );
     opacity: ${(props) => props.opacity};
