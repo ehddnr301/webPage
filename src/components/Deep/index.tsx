@@ -24,7 +24,7 @@ const FirstContent = styled.div`
     padding-top: 5%;
 `;
 const TextBox = styled.div`
-    z-index: 100000;
+    z-index: 9998;
     color: white;
     font-size: 1vw;
     display: flex;
