@@ -59,3 +59,5 @@
     -   program소개 페이지 부분중 deep learning 에 해당하는 부분을 추가하였습니다.
 -   18th - Done Program page
     -   program소개 페이지 를 디자인적인 부분을 제외하고 완료했습니다.
+-   19th - Add QnA page
+    -   QnA 페이지를 작업했습니다.

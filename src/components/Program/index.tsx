@@ -28,8 +28,9 @@ const Button = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 25px;
+    padding: 5px;
 `;
 
 const Program: React.FC = () => {
@@ -41,7 +42,7 @@ const Program: React.FC = () => {
     return (
         <Container>
             <Button onClick={onClick}>
-                {course ? `Machine Learning Course` : `Deep Learning Course`}
+                {course ? `머신러닝반 보기` : `딥러닝반 보기`}
             </Button>
             {course ? <Deep /> : <Machine />}
         </Container>

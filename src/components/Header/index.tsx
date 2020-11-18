@@ -62,6 +62,9 @@ const Header: React.FC = () => {
                 <Tab>awards</Tab>
                 <Tab>project</Tab>
                 <Tab>수강후기</Tab>
+                <Tab>
+                    <Link to="/qna">Q&A</Link>
+                </Tab>
             </Tabs>
         </Container>
     );
